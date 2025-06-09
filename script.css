@@ -1,0 +1,103 @@
+@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
+
+:root {
+    /* Only include this part if you wish to change these variables */
+    /* You can change the size but only to be less than 48px, you must change the blob scale too */
+    --guildbar-avatar-size: 48px;
+    --blob-scale: 48;
+
+    --guildbar-folder-size: var(--guildbar-avatar-size);
+    --folder-blob-scale: var(--blob-scale);
+}
+
+.sidebarList_c48ade, .notice__6e2b9 {
+    border-top-left-radius: 0px!important;
+    border-top: 0px!important;
+}
+.notice__6e2b9 {
+    border-left: 0px!important;
+    border-bottom: 1px solid var(--app-border-frame);
+}
+.tutorialContainer__1f388 {
+    padding-top: calc(var(--space-xs) * 2); /* Fix padding on home button */
+}
+.visual-refresh .base_c48ade {
+    grid-template-rows: [top] min-content [titleBarEnd] min-content [noticeEnd] 1fr [end];
+    grid-template-areas: "notice     notice       notice"
+                         "guildsList channelsList titleBar"
+                         "guildsList channelsList page";
+}
+
+.visual-refresh .container__9293f {
+    margin-top: 0px;
+    border-top: none;
+}
+
+.visual-refresh .chat_f75fb0 {
+    margin-top: 0px;
+}
+
+.visual-refresh .toolbar__9293f .iconWrapper__9293f {
+    margin: 0px;
+}
+
+.visual-refresh .icon__9293f {
+    width: calc(var(--chat-input-icon-size) * 1.2);
+    height: calc(var(--chat-input-icon-size) * 1.2);
+}
+
+.messagesWrapper__36d07 {
+    margin-bottom: 6px;
+    /* margin-left: 6px; */
+}
+
+.text_b888001 {
+    font-size: 10px;
+}
+
+.sidebar_c48ade {
+    border-right: 1px solid #393a3f;
+}
+
+.visual-refresh section[aria-label="User area"] {
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);;
+    left: var(--custom-guild-list-width);
+    bottom: 0px;
+    border-radius: 0px;
+    border: none;
+}
+
+.visual-refresh nav:has([data-list-id="guildsnav"]) {
+  margin-bottom: unset;
+}
+
+.title_c38106 {
+    display: none;
+}
+
+.text_b88801 {
+    /* background-color: red; */
+    font-size:14px;
+}
+
+.typingDots_b88801 {
+    /* background-color: red; */
+    margin-top: 1px;
+}
+
+.button__201d5[aria-label="Send a gift"], .button__201d5[aria-label="Apps"] {
+    display: none
+}
+
+/* 
+The problem here is that there is now an empty space,
+because the gap left between Emojis and Apps still exists
+even if Apps is no longer visible.
+
+To fix this, the right margin is made negative by the same amount
+that the gap is positive, offsetting them.
+*/
+
+.inner__74017 {
+    margin-right: calc(-1 * var(--space-8));
+}

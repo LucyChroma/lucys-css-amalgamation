@@ -77,15 +77,27 @@
 
 .text_b88801 {
     /* background-color: red; */
-    font-size:14px;
+    font-size: 14px;
+    margin-left: 5px !important;
+}
+
+.text_b88801::before {
+    content: "\a0";
+}
+
+.typing_b88801, .base_b88801 {
+    /* background-color: red; */
+    position: absolute;
+    top: 39px !important;
+    left: -4px;
 }
 
 .typingDots_b88801 {
     /* background-color: red; */
-    margin-top: 1px;
+    margin-top: 2px;
 }
 
-.button__201d5[aria-label="Send a gift"], .button__201d5[aria-label="Apps"] {
+.button__74017[aria-label="Send a gift"], .button__201d5[aria-label="Apps"] {
     display: none
 }
 
@@ -100,4 +112,17 @@ that the gap is positive, offsetting them.
 
 .inner__74017 {
     margin-right: calc(-1 * var(--space-8));
+}
+
+.align-chat-input .scrollerSpacer__36d07 {
+    height: 44px;
+}
+
+.channelBottomBarArea_f75fb0 {
+    position: relative;
+    top: -18px;
+}
+
+.align-chat-input .inTextChannel_b88801 .typingDots_b88801 {
+    margin-left: 4px;
 }

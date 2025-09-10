@@ -88,7 +88,8 @@
 .typing_b88801, .base_b88801 {
     /* background-color: red; */
     position: absolute;
-    top: 39px !important;
+    top: unset !important;
+    bottom: 1px !important;
     left: -4px;
 }
 
@@ -120,7 +121,7 @@ that the gap is positive, offsetting them.
 
 .channelBottomBarArea_f75fb0 {
     position: relative;
-    top: -18px;
+    top: -15px;
 }
 
 .align-chat-input .inTextChannel_b88801 .typingDots_b88801 {

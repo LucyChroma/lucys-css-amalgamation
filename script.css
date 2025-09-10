@@ -127,3 +127,7 @@ that the gap is positive, offsetting them.
 .align-chat-input .inTextChannel_b88801 .typingDots_b88801 {
     margin-left: 4px;
 }
+
+.chatTypingGradientAtBottom__36d07 .chatGradientBase__36d07 {
+    display: none;
+}
